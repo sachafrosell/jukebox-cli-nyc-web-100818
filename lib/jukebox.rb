@@ -46,7 +46,7 @@ def play(array)
   array.each_with_index do |song, index|
     if user_input == song
       puts "Playing #{song}"
-    elsif user_input == index + 1 
+    elsif user_input == index
       puts "Playing #{song}"
     else 
       puts "Invalid input, please try again"
