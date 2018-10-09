@@ -60,7 +60,7 @@ def exit_jukebox
   puts "Please enter a song name or number:"
   user_input = gets.chomp 
   if user_input.downcase == "exit"
-    puts "Invalid input, please try again"
+    puts "Goodbye"
   end 
 end 
 
