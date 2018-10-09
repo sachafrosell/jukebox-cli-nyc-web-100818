@@ -25,7 +25,7 @@ def list(array)
   array.each_with_index do |songs, index|
     song_list += "#{index + 1}. #{songs}\n"
   end
-  return song_list
+  puts song_list
 end
 
 def play(array, identifier)
