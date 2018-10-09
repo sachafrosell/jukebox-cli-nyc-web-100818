@@ -49,7 +49,7 @@ end
 puts "Enter song id:"
 identifier = gets.chomp
 
-puts play(song_array, identifier)
+play(song_array, identifier)
 
 song_array = [
   "Phoenix - 1901",
