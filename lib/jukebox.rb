@@ -49,14 +49,11 @@ def play(array)
     elsif user_input == index + 1 
       puts "Playing #{song}"
     else 
-      puts 
-      
-
+      puts "Invalid input, please try again"
+    end 
+  end 
 end 
 
-puts "Enter song id:"
-identifier = gets.chomp
-
-puts play(song_array, identifier)
+play(songs)
 
 
