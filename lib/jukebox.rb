@@ -35,7 +35,7 @@ def play(array, identifier)
         return song
        end 
      end 
-   else 
+   elsif identifier.class != String && identifier < array.length
      array.each_with_index do |song, index|
        if index == identifier - 1
         return song
