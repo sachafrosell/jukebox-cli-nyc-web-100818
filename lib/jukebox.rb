@@ -28,8 +28,11 @@ def list(array)
   return song_list
 end
 
-def play(array)
-  array.include?
+def play(array, identifier)
+  if identifier.class == String 
+    if array.include
+  else 
+    
 end 
 
 list([
