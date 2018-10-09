@@ -32,13 +32,13 @@ def play(array, identifier)
   if identifier.class == String 
      array.each do |song|
        if song.include?(identifier)
-        puts song
+        song
        end 
      end 
    else 
      array.each_with_index do |song, index|
        if index == identifier - 1
-        puts song
+        song
        end 
      end 
   end 
