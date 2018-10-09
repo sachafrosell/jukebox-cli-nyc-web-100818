@@ -51,7 +51,7 @@ def run(array)
   puts "Please enter a command:"
   user_input = gets.chomp 
   if user_input == "help"
-    run
+    help
   elsif user_input == "list"
     list(array)
   elsif user_input == "play"
