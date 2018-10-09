@@ -41,7 +41,7 @@ def list(array)
 end
 
 def play(array)
-  
+  puts 
 
 end 
 
