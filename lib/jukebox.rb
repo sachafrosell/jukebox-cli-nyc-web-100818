@@ -57,11 +57,7 @@ def play(array)
 end 
 
 def exit_jukebox
-  puts "Please enter a song name or number:"
-  user_input = gets.chomp 
-  if user_input.downcase == "exit"
     puts "Goodbye"
-  end 
 end 
 
 
