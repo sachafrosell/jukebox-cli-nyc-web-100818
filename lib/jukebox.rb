@@ -44,7 +44,9 @@ def play(array)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   array.each_with_index do |song, index|
-    if user_input == song || (0..array.length).include?(user_input)
+    if user_input == song
+      return song
+      
 
 end 
 
