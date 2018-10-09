@@ -45,7 +45,11 @@ def play(array)
   user_input = gets.chomp
   array.each_with_index do |song, index|
     if user_input == song
-      return song
+      puts "Playing #{song}"
+    elsif user_input == index + 1 
+      puts "Playing #{song}"
+    else 
+      puts 
       
 
 end 
