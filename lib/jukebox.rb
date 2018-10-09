@@ -29,7 +29,7 @@ def list(array)
 end
 
 def play(array)
-  
+  array.include?
 end 
 
 list([
