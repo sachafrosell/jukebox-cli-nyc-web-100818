@@ -40,21 +40,22 @@ def list(array)
   puts song_list
 end
 
+
 def play(array)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   array.each_with_index do |song, index|
-    puts index
-    # if user_input == song
-    #   puts "Playing #{song}"
-    # elsif user_input == index
-    #   puts "Playing #{song}"
-    # else 
-    #   puts "Invalid input, please try again"
-    end 
+    song_num = index + 1
+     if user_input == song
+       return "Playing #{song}"
+     elsif user_input == song_num.to_s
+       return "Playing #{song}"
+     else 
+       return "Invalid input, please try again"
+     end 
   end 
 end 
 
-play(songs)
+
 
 
