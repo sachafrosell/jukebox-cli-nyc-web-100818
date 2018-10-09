@@ -30,7 +30,8 @@ end
 
 def play(array, identifier)
   if identifier.class == String 
-    array.find 
+    array.each do |songs|
+      if songs =
       
   else 
     
