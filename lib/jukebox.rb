@@ -30,7 +30,8 @@ end
 
 def play(array, identifier)
   if identifier.class == String 
-    if array.include
+    array.find 
+      
   else 
     
 end 
