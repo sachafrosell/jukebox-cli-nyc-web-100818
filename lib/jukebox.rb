@@ -51,7 +51,7 @@ identifier = gets.chomp
 
 puts play(song_array, identifier)
 
-songs = [
+song_array = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
   "Sufjan Stevens - Too Much",
