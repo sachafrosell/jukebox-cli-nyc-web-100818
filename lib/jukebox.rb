@@ -30,15 +30,21 @@ end
 
 def play(array, identifier)
   if identifier.class == String 
-    array.each do |songs|
-      if songs.include?(identifier)
-        return songs
-      
+    array.each do |song|
+      if song.include?(identifier)
+        return song
+      end 
+    end 
   else 
-    
+    array.each do |song, index|
+      if index == identifier - 1
+        return song
+      end 
+    end 
+  end 
 end 
 
-list([
+play([
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
   "Sufjan Stevens - Too Much",
@@ -48,4 +54,4 @@ list([
   "Phoenix - Consolation Prizes",
   "Harry Chapin - Cats in the Cradle",
   "Amos Lee - Keep It Loose, Keep It Tight"
-])
+], 2)
