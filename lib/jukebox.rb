@@ -28,6 +28,10 @@ def list(array)
   return song_list
 end
 
+def play(array)
+  
+end 
+
 list([
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
