@@ -47,11 +47,11 @@ def play(array)
   array.each_with_index do |song, index|
     song_num = index + 1
      if user_input == song
-       return "Playing #{song}"
+       puts "Playing #{song}"
      elsif user_input == song_num.to_s
-       return "Playing #{song}"
+       puts "Playing #{song}"
      else 
-       return "Invalid input, please try again"
+       puts "Invalid input, please try again"
      end 
   end 
 end 
