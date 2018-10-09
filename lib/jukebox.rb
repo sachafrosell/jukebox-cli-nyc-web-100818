@@ -30,17 +30,17 @@ end
 
 def play(array, identifier)
   if identifier.class == String 
-    array.each do |song|
-      if song.include?(identifier)
-        return song
-      end 
-    end 
-  else 
-    array.each do |song, index|
-      if index == identifier - 1
-        return song
-      end 
-    end 
+     array.each do |song|
+       if song.include?(identifier)
+        puts song
+       end 
+     end 
+   else 
+     array.each_with_index do |song, index|
+       if index == identifier - 1
+        puts song
+       end 
+     end 
   end 
 end 
 
