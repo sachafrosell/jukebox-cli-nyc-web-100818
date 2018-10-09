@@ -41,9 +41,16 @@ def run
   puts "Please enter a command:"
   user_input = gets.chomp 
   if user_input == "help"
-    run
+    help
   elsif user_input == "list"
-    list()
+    list(songs)
+  elsif user_input == "play"
+    play(songs)
+  elsif user_input == "exit"
+  exit_jukebox
+  else
+    run
+  end
 end 
 
 
