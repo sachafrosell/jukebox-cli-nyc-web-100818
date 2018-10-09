@@ -42,14 +42,14 @@ def play(array, identifier)
        end 
      end 
    else 
-   return "error"
+   puts "error"
   end 
 end 
 
 puts "Enter song id:"
 identifier = gets.chomp
 
-puts play(songs, identifier)
+puts play(song_array, identifier)
 
 songs = [
   "Phoenix - 1901",
