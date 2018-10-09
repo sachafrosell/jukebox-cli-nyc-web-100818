@@ -40,24 +40,9 @@ def list(array)
   puts song_list
 end
 
-def play(array, identifier)
-  if identifier.class == String 
-     array.each do |song|
-       if song.downcase.include?(identifier)
-        return song
-      else 
-        return "error"
-       end 
-     end 
-   elsif identifier.class != String && identifier < array.length
-     array.each_with_index do |song, index|
-       if index == identifier - 1
-        return song
-       end 
-     end 
-   else 
-   puts "error"
-  end 
+def play(array)
+  
+
 end 
 
 puts "Enter song id:"
