@@ -40,7 +40,10 @@ def run
   help
   puts "Please enter a command:"
   user_input = gets.chomp 
-  
+  if user_input == "help"
+    run
+  elsif user_input == "list"
+    list()
 end 
 
 
