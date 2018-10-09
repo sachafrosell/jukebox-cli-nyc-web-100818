@@ -43,7 +43,7 @@ end
 def play(array, identifier)
   if identifier.class == String 
      array.each do |song|
-       if song.include?(identifier)
+       if song.downcase.include?(identifier)
         return song
        end 
      end 
