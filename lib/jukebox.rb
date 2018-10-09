@@ -46,14 +46,12 @@ def play(array, identifier)
   end 
 end 
 
-puts "Enter your name:"
-users_name = gets.chomp
 puts "Enter song id:"
 identifier = gets.chomp
 
-puts play(users_name, identifier)
+puts play(songs, identifier)
 
-play([
+songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
   "Sufjan Stevens - Too Much",
@@ -63,4 +61,4 @@ play([
   "Phoenix - Consolation Prizes",
   "Harry Chapin - Cats in the Cradle",
   "Amos Lee - Keep It Loose, Keep It Tight"
-], 2)
+]
