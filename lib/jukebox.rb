@@ -31,7 +31,8 @@ end
 def play(array, identifier)
   if identifier.class == String 
     array.each do |songs|
-      if songs =
+      if songs.include?(identifier)
+        return songs
       
   else 
     
