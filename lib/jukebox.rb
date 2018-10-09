@@ -41,6 +41,8 @@ def play(array, identifier)
         return song
        end 
      end 
+   else 
+   return "error"
   end 
 end 
 
