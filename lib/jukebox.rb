@@ -38,7 +38,7 @@ def play(array, identifier)
    else 
      array.each_with_index do |song, index|
        if index == identifier - 1
-        return song
+        return identifier
        end 
      end 
   end 
