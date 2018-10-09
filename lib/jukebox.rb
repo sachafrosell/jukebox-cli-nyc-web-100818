@@ -45,6 +45,8 @@ def play(array, identifier)
      array.each do |song|
        if song.downcase.include?(identifier)
         return song
+      else 
+        return "error"
        end 
      end 
    elsif identifier.class != String && identifier < array.length
